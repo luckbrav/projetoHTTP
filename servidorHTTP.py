@@ -80,7 +80,7 @@ while True:
                     fout.write(b"\n") # Adiciona uma quebra de linha no final
                 
                 # Respondendo o cliente confirmando a criação
-                response = "HTTP/1.1 201 Created\r\n\r\n<h1>Sucesso!</h1><p>Recurso criado no servidor via POST.</p>"
+                response = 'HTTP/1.1 201 Created\r\n\r\n<h1>Sucesso!</h1><p>Recurso criado no servidor via POST.</p><br><a href="index.html"><button>Voltar para a tela inicial</button></a>'
                 client_connection.sendall(response.encode())
 
     # Fechar a conexão dedicada com este cliente

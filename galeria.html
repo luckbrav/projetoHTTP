@@ -1,12 +1,56 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
     <title>Galeria</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 { color: #2c3e50; }
+        p { color: #555; }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-voltar {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background-color: #95a5a6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn-voltar:hover { background-color: #7f8c8d; }
+    </style>
 </head>
 <body>
-    <h1>Página com Imagem</h1>
-    <p>Abaixo deves ver uma imagem servida pelo nosso Python via GET (lida como binário):</p>
-    <img src="imagem.jpg" alt="Uma imagem de teste" width="400">
-    <br>
-    <a href="index.html">Voltar para o início</a>
+    <div class="card">
+        <h1>Página com Imagem</h1>
+        <p>Abaixo você vê a imagem servida pelo nosso Python via GET (lida como binário):</p>
+        <img src="imagem.jpg" alt="Uma imagem de teste">
+        <br>
+        <a href="index.html" class="btn-voltar">Voltar para o início</a>
+    </div>
 </body>
 </html>
